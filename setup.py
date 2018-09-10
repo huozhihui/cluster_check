@@ -4,7 +4,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='cluster_check',
-    version='1.0.0',
+    version='1.0.1',
     url='https://github.com/huozhihui/cluster_check',
     license='BSD',
     author='Huozhihui',
