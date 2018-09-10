@@ -1,0 +1,6 @@
+Serial No: RD-BIG-000-04978
+Pool Name: xt3_pool3
+Raid Name: raidz2-0
+Disk Info: a5958ec2-3907-4397-ba76-27ebfdd39161 REMOVED 0 0 0
+Disk Type: Data/Metadata
+ Capacity: 4T

@@ -1,0 +1,28 @@
+	NAME                                      STATE     READ WRITE CKSUM
+	pool2                                     ONLINE       0     0     0
+	  raidz2-0                                ONLINE       0     0     0
+	    5cf2c895-0f09-4417-a879-219f6795f6d3  ONLINE       0     0     0
+	    4bf9631a-11d6-4875-a956-92551bfd5727  ONLINE       0     0     0
+
+
+10.0.0.116 | success | rc=0 >>
+Serial No: RD-BIG-000-04978
+NAME                                      STATE     READ WRITE CKSUM   TYPE   CAPACITY
+pool2                                     ONLINE       0     0     0   Data     4T
+  raidz2-0                                ONLINE       0     0     0  Metadata  4T
+    5cf2c895-0f09-4417-a879-219f6795f6d3  ONLINE       0     0     0
+
+
+
+10.0.0.116 | success | rc=0 >>
+Serial No: RD-BIG-000-04978
+xt3_pool3
+    raidz2-0
+        a5958ec2-3907-4397-ba76-27ebfdd39161  REMOVED   0  0  0  Data 4T
+        a5958ec2-3907-4397-ba76-27ebfdd39161  REMOVED   0  0  0  Data 4T
+
+xt3_pool4
+    raidz2-0
+        a5958ec2-3907-4397-ba76-27ebfdd39161  REMOVED   0  0  0  Data 4T
+    raidz2-1
+        a5958ec2-3907-4397-ba76-27ebfdd39161  REMOVED   0  0  0  Data 4T

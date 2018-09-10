@@ -1,0 +1,20 @@
+1、首先配置hosts文件，根据集群进行分组并将主机IP配置到集群分组中，例如：
+    [cluster]
+    10.0.0.[16:19]
+    10.0.0.[24:31]
+    10.0.0.[32:39]
+
+    [cluster2]
+    10.0.100.3 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=Passw0rd
+    10.0.100.4 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=Passw0rd
+
+2、将xj.py脚本拷贝到各主机的/root目录中，有两种方法：
+    
+    单一拷贝：
+    scp xj.py root@new_ip:/root
+
+    批量拷贝，通过修改集群组名（即group_name参数）来指定该组名下的批量IP地址：
+    ansible -i hosts group_name -m copy -a "src=xj.py dest=/root"
+
+3、通过修改集群组名（即group_name参数），选择开始巡检的集群
+    ansible -i hosts group_name -m shell -a "python /root/xj.py" > /tmp/20171220.log

@@ -1,0 +1,11 @@
+[cluster1]
+10.50.1.17[8:9] ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=Passw0rd
+
+#10.50.1.178 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=Passw0rd
+#10.50.1.179 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=Passw0rd
+
+[all:children]
+cluster1
+cluster2
+cluster3
+

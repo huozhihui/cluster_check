@@ -1,0 +1,154 @@
+  pool: pool1
+ state: ONLINE
+status: One or more devices has experienced an unrecoverable error.  An
+	attempt was made to correct the error.  Applications are unaffected.
+action: Determine if the device needs to be replaced, and clear the errors
+	using 'zpool clear' or replace the device with 'zpool replace'.
+   see: http://zfsonlinux.org/msg/ZFS-8000-9P
+  scan: resilvered 4.38T in 45h26m with 0 errors on Sun Dec 17 21:57:26 2017
+config:
+
+	NAME                                      STATE     READ WRITE CKSUM
+	xt2_pool1                                 ONLINE       0     0     0
+	  raidz2-0                                ONLINE       0     0     0
+	    c604e85c-5702-4446-8b13-2225091bc80a  ONLINE       1     0     0
+	    b4eaee08-23a0-4e12-a7ad-2723ca7a8a13  ONLINE       0     2     0
+	    1d17e0b4-9013-474e-9f6b-8203a33a10b4  ONLINE       0     0     0
+	    69183970-b6fe-4bfb-8ca1-ba806db12f8c  ONLINE       0     0     0
+	    59f7eee3-4b38-4419-8987-19291b338a33  ONLINE       0     0     0
+	    b0955b64-f369-498f-add3-7c244de85f6e  ONLINE       0     0     0
+	    cd220e56-eb2d-4111-b0f1-4e037fd97e5a  ONLINE       0     0     0
+	    735b8deb-52d1-44d9-a2e3-83e4a8b2eba7  ONLINE       0     0     0
+	    b6f54dfd-4df7-4466-a014-48e3ed64b11e  ONLINE       0     0     8
+	    654ee422-8ccd-4b68-92f7-7307f10d766d  UNAVAIL      0     0     0  asdfsdf
+	    ff45034c-c5c6-4ae4-ab04-80266eae9bdf  ONLINE       0     0     0
+	  raidz2-1                                ONLINE       0     0     0
+	    426d480a-3b7b-4c48-8e54-e50c0e87709b  ONLINE       0     0     0
+	    28c80553-0180-4f60-a70d-d54b4ae405da  ONLINE       0     0     0
+	    723628cf-74ef-4387-82e2-d816e76d100d  ONLINE       0     0     0
+	    a1c4388d-c8c6-45a5-b875-a5066668f5e6  ONLINE       0     0     0
+	    6dc4fbd6-a5d4-4854-a53c-04b8bb04713b  ONLINE       0     0     0
+	    3f615dfc-fe7f-4929-a19d-88a3dc042b3e  ONLINE       0     0     0
+	    1d330f30-cd94-4855-b5cd-62d905726f33  ONLINE       0     0     0
+	    48c3b1c3-7bd0-42b7-a2a0-0445eddf0db4  ONLINE       0     0     0
+	    4a9d68ba-0e5c-43ff-8da0-764f58413d3e  ONLINE       0     0     0
+	    e85aa575-ae80-49c8-99b4-369608b02a0a  ONLINE       0     0     0
+	    6a42b644-d144-4933-8251-b55a9a76aaf9  ONLINE       0     0     0
+	spares
+	  8cfa9e41-bd1d-416b-8f40-b5e0889a43b2    AVAIL   
+
+errors: No known data errors
+
+  pool: pool2
+ state: ONLINE
+status: One or more devices has experienced an unrecoverable error.  An
+	attempt was made to correct the error.  Applications are unaffected.
+action: Determine if the device needs to be replaced, and clear the errors
+	using 'zpool clear' or replace the device with 'zpool replace'.
+   see: http://zfsonlinux.org/msg/ZFS-8000-9P
+  scan: resilvered 100K in 0h0m with 0 errors on Thu Aug 10 23:21:28 2017
+config:
+
+	NAME                                      STATE     READ WRITE CKSUM
+	pool2                                     ONLINE       0     0     0
+	  raidz2-0                                ONLINE       0     0     0
+	    5cf2c895-0f09-4417-a879-219f6795f6d3  ONLINE       0     0     0
+	    4bf9631a-11d6-4875-a956-92551bfd5727  ONLINE       0     0     0
+	    91208abc-1b58-46f9-8dbf-14736d48733c  ONLINE       0     0     0
+	    bed1daee-0536-46c3-8720-26f7ca4c521a  ONLINE       0     0     0
+	    571489d4-c78a-4e03-a6ab-66090f5b07a6  ONLINE       0     0     0
+	    b95db749-7be3-4202-90e1-710f12e8efd3  ONLINE       0     0     0
+	    d35ef5b5-7b8c-43fe-9a6f-1a8a75524afc  ONLINE       0     0     0
+	    5532896e-0208-475a-b922-2e6204e5064a  ONLINE       0     0     0
+	    5802d5ec-495f-4026-874a-c7ab977424a3  ONLINE       0     0     0
+	    711d87c4-f9c5-4807-b0a6-ee017c1ac990  ONLINE       0     0     0
+	    4943213a-3b71-4f63-953c-2c51816f32c5  ONLINE       0     0     0
+	  raidz2-1                                ONLINE       0     0     0
+	    f71cacfd-c450-4009-8a11-002dd19877aa  ONLINE       0     0     0
+	    c2fda973-21ec-4a17-9588-d98601aa6609  ONLINE       0     0     0
+	    57749441-fb4e-45fd-86a4-0e815230ba81  ONLINE       0     0     0
+	    fa68147c-5696-4980-b7ab-7f83c8eeac32  ONLINE       0     0     0
+	    69c23de5-7212-46d5-8b71-731ae58e4d3d  ONLINE       0     0     0
+	    6956beca-43ea-4cd8-8594-7ea22bfee265  ONLINE       0     0     0
+	    838d2682-984d-456d-9f69-fa3efa7eeb6a  ONLINE       0     0     6
+	    7eab5f4e-9aea-4e93-b1d8-ef5ac649ed01  ONLINE       0     0     0
+	    f5a89841-b5dc-46f5-b6a6-5c974334d4b8  ONLINE       0     0     0
+	    ac6aee12-30d7-4dcd-82f5-92d9dda9547f  ONLINE       0     0     0
+	    9cd33734-dbb7-4cf2-873c-0b9daa7807b3  ONLINE       0     0     0
+
+errors: No known data errors
+
+  pool: pool3
+ state: ONLINE
+status: One or more devices has experienced an unrecoverable error.  An
+	attempt was made to correct the error.  Applications are unaffected.
+action: Determine if the device needs to be replaced, and clear the errors
+	using 'zpool clear' or replace the device with 'zpool replace'.
+   see: http://zfsonlinux.org/msg/ZFS-8000-9P
+  scan: resilvered 4.00T in 40h35m with 0 errors on Sun Dec 17 16:26:58 2017
+config:
+
+	NAME                                      STATE     READ WRITE CKSUM
+	xt2_pool3                                 ONLINE       0     0     0
+	  raidz2-0                                ONLINE       0     0     0
+	    63301357-8a79-4ce1-953e-dbd857cc1e23  ONLINE       0     0     0
+	    d413c3cc-6c7c-4cba-adc2-c1b639d7ffde  ONLINE       0     0     6
+	    d745c0ae-d7b9-4ae6-ae21-b87fd3cc780d  ONLINE       0     0     0
+	    2f74bce0-b3ae-497d-ab17-e6b05d16f3bf  ONLINE       0     0     0
+	    f8d96b46-646f-4f96-b282-5fa275352a12  ONLINE       0     0     0
+	    ca96b100-097b-4dc9-8b21-86725739c10f  ONLINE       0     0     1
+	    7d8b6b3a-0109-4f7a-8577-65467c68c844  ONLINE       0     0     0
+	    d7a20600-9ff3-45a4-9513-70adaa93aeda  ONLINE       0     0     0
+	    c2c48f17-397e-4733-9a12-79c270adb33c  ONLINE       0     0     0
+	    eaf91622-f03e-404a-ba9a-151563ed4ee9  ONLINE       0     0     2
+	    57b8ffc8-e59f-49c4-89f9-e49a7056c7c3  ONLINE       0     0     0
+	  raidz2-1                                ONLINE       0     0     0
+	    f45893e2-a49f-4e61-aaa0-99ae3e0fd4a8  ONLINE       0     0     0
+	    4ebad9e1-3077-4d46-b004-875c104293fd  ONLINE       0     0     0
+	    a48d0083-d398-4fb5-a3bb-3654fa7ae3e6  ONLINE       0     0     0
+	    9aeee78f-d20b-4d68-960d-76d24e8e5e48  ONLINE       0     0     0
+	    c2063d10-981f-4d7f-bdec-ee13ee1717d6  ONLINE       0     0     0
+	    4ae05201-c7ea-4855-8da7-1c4c6334a4f1  ONLINE       0     0     0
+	    f6c30427-f634-461a-9b08-aa087aac2156  ONLINE       0     0     0
+	    a67353e5-70cf-4a44-b80d-85861628e3da  ONLINE       0     0     0
+	    439bcc57-139e-4ad6-aace-1a3c7dfffa0c  ONLINE       0     0     0
+	    5e95745a-c3f0-49c2-9d15-188bf3dfe345  ONLINE       0     0     0
+	    3fe2c559-9a66-4c58-90f3-8cd2ac4d6035  ONLINE       0     0     0
+	spares
+	  358a12af-93ca-4787-b48f-266e5ee96e22    AVAIL   
+
+errors: No known data errors
+
+  pool: pool4
+ state: ONLINE
+  scan: resilvered 777G in 7h3m with 0 errors on Tue Jun 14 10:04:58 2016
+config:
+
+	NAME                                      STATE     READ WRITE CKSUM
+	pool4                                     ONLINE       0     0     0
+	  raidz2-0                                ONLINE       0     0     0
+	    7efefa4e-b22c-4d6e-8b76-7fedde7467a3  ONLINE       0     0     0
+	    e4cf991d-a300-4790-bac3-b4c2c32a0040  ONLINE       0     0     0
+	    302ac766-17ab-494a-83bf-5cdc7f338767  ONLINE       0     0     0
+	    bb5b4d9f-a6e9-4893-b7fe-59fcbdb82776  ONLINE       0     0     0
+	    9ceced7a-a02b-4527-86bb-8b704765e996  ONLINE       0     0     0
+	    6a152745-ffc7-4188-9b94-12ee014bbb01  ONLINE       0     0     0
+	    58f6ac14-7fa7-462e-b270-f3b03aa6eb05  ONLINE       0     0     0
+	    c8ce711a-3776-47ff-ab6f-7b6d85d8c757  ONLINE       0     0     0
+	    d63a078c-e250-4b4c-9bf2-82f2c46eab99  ONLINE       0     0     0
+	    004e44cb-37c0-45e7-8360-85cb440c77b9  ONLINE       0     0     0
+	    ec84b16e-c9a1-4546-85a9-3f30222073d1  ONLINE       0     0     0
+	  raidz2-1                                ONLINE       0     0     0
+	    5b04e73f-c6b9-49c3-8e34-ba771f96503b  ONLINE       0     0     0
+	    d095eb4a-904e-437c-ad97-3a6e303b27e7  ONLINE       0     0     0
+	    366fa852-7cb6-4082-94e8-1325ef91adf9  ONLINE       0     0     0
+	    73af1c44-73ab-46f7-82ac-e2935f956873  ONLINE       0     0     0
+	    2b8d01cd-7220-425f-9f96-8ae9dea12471  ONLINE       0     0     0
+	    e7f9c8cd-c5e9-49b0-8731-2f01c1c30823  ONLINE       0     0     0
+	    a7720485-17d2-49af-9541-9b75f36db0f9  ONLINE       0     0     0
+	    8d088d0c-b547-4c28-95b9-f1c8383d58b0  ONLINE       0     0     0
+	    b79cb517-f65e-4171-b6b2-0b849f4ca716  ONLINE       0     0     0
+	    088f81f9-a7a5-4065-9adb-556ce4b6b17e  ONLINE       0     0     0
+	    cf957cd6-02b2-4678-9bf6-77713a69b76f  ONLINE       0     0     0
+
+errors: No known data errors

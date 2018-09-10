@@ -1,0 +1,4 @@
+xt1_pool1  metadata_size               372G                        default
+xt1_pool1  metadata_used               G                       default
+xt1_pool2  metadata_size               372G                        default
+xt1_pool2  metadata_used               6.70G                       default

@@ -1,0 +1,8 @@
+1、通过pip install安装包
+    pip install xj
+
+2、创建或配置集群,运行xjcli命令
+    1) list cluster
+    2) create cluster
+    3) add node to cluster
+
