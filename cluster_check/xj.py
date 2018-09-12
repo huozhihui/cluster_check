@@ -167,9 +167,10 @@ def check_pool_usage():
     cmd = "df -h | grep 'pool' | awk '{print $6}'"
     sub = SubProcess(cmd)
     for pool_name in sub.readlines():
-        if system_info.disk_percent(pool_name.strip('\n')) > 95:
+        pool_name = pool_name.strip('\n')
+        if system_info.disk_percent(pool_name) > 95:
             sub = SubProcess("df -h | grep {}".format(pool_name))
-            content.append(sub.read())
+            content.append(sub.read().strip('\n'))
     __print_output(content)
 
 
