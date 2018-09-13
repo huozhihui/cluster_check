@@ -49,16 +49,13 @@ def write_to_log(line):
 def __format_data(data):
     '''格式化数据后输出'''
     new_data = []
-    today = datetime.today().strftime("%Y-%m-%d")
+    today = datetime.today().strftime("%Y-%m-%d %H:%M:%S")
     for pool_name, val in data.items():
         metadata_size_val = __get_metadata_value(val['metadata_size'])
         metadata_used_val = __get_metadata_value(val['metadata_used'])
         if metadata_size_val and metadata_used_val:
             percentage = '%0.2f' % ((metadata_used_val / metadata_size_val) * 100)
-        else:
-            percentage = ''
-
-        new_data.append((today, pool_name, val['metadata_size'], val['metadata_used'], percentage))
+            new_data.append((today, pool_name, val['metadata_size'], val['metadata_used'], percentage))
     return new_data
 
 
